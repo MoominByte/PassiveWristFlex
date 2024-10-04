@@ -100,7 +100,7 @@ create_exercise(
     description="Déposer le poignet sur le bord d'une table. Avec la main opposée, plier le poignet aussi loin que possible. Relâcher et recommencer.",
     debut_exercise="Commencer la flexion.",
     instructions=["Maintenir", "Relâcher"],
-    intervals=[15, 3],  # Intervalles en secondes
+    intervals=[15, 5],  # Intervalles en secondes
     repetitions=15,     # Nombre de répétitions
     output_file="exercice_flexion.mp3"
 )
@@ -112,7 +112,7 @@ create_exercise(
     description="Joindre les paumes ensemble à la façon d'une prière. Tout en gardant les paumes collées, descendre les mains jusqu'à la hauteur des coudes. Relâcher et recommencer.",	
     debut_exercise="Commencer la prière.",
     instructions=["Maintenir", "Relâcher"],
-    intervals=[5, 2],  # Intervalles en secondes
+    intervals=[6, 3],  # Intervalles en secondes
     repetitions=10,     # Nombre de répétitions
     output_file="exercice_priere.mp3"
 )
@@ -124,7 +124,7 @@ create_exercise(
     description="Déposer les mains à plat sur le bord d'une table. Sans plier les coudes, incliner le corps vers l'avant pour étirer les poignets. Relâcher et recommencer.",	
     debut_exercise="Commencer l'extension.",
     instructions=["Maintenir", "Relâcher"],
-    intervals=[30, 5],  # Intervalles en secondes
+    intervals=[30, 7],  # Intervalles en secondes
     repetitions=5,     # Nombre de répétitions
     output_file="exercice_extension.mp3"
 )
@@ -136,11 +136,35 @@ create_exercise(
     description="Déposer l'avant-bras sur une table, pouce vers le haut, en laissant dépasser le poignet. En tenant fermement un marteau ou un poids, incliner la main vers le bas sans décoller le couder de la table. Ensuite, ramener la main vers le haut sans décoller l'avant-bras de la table.",	
     debut_exercise="Commencer la déviation.",
     instructions=["Incliner", "Ramener"],
-    intervals=[5, 2],  # Intervalles en secondes
+    intervals=[6, 3],  # Intervalles en secondes
     repetitions=15,     # Nombre de répétitions
     output_file="exercice_deviation.mp3"
 )
 exercises.append({'name': 'Deviation', 'file': "exercice_deviation.mp3"})
+
+# Exercice de pouce vers l'intérieur
+create_exercise(
+    exercise_name="Extension du pouce vers l'intérieur",
+    description="Toucher le bout du 5e doigt avec le pouce et glisser le long du doigt vers la jointure, s'aider de l'autre main. Maintenir la position, relâcher et recommencer.",	
+    debut_exercise="Commencer l'extension du pouce.",
+    instructions=["Maintenir", "Relâcher"],
+    intervals=[7, 3],  # Intervalles en secondes
+    repetitions=15,     # Nombre de répétitions
+    output_file="exercice_pouce1.mp3"
+)
+exercises.append({'name': 'Pouce interieur', 'file': "exercice_pouce1.mp3"})
+
+# Exercice d'ouverture du pouce
+create_exercise(
+    exercise_name="Extension du pouce vers l'iextérieur",
+    description="Utiliser des objets de plus en plus grand pour ouvrir le pouce, par example des couvercles et/ou bocaux. Commencer avec un objet petit et augmenter la taille progressivement. Maintenir la position, relâcher et recommencer.",	
+    debut_exercise="Commencer l'extension du pouce.",
+    instructions=["Maintenir", "Relâcher"],
+    intervals=[7, 3],  # Intervalles en secondes
+    repetitions=15,     # Nombre de répétitions
+    output_file="exercice_pouce2.mp3"
+)
+exercises.append({'name': 'Pouce exterieur', 'file': "exercice_pouce2.mp3"})
 
 # Créer le programme complet avec le titre une seule fois au début
 create_program_with_title(
